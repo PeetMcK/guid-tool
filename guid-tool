@@ -28,6 +28,6 @@ else:
     else:
         guid = uuid.UUID(args[0])
 
-print 'hex: ' + str(guid)
-print 'int: ' + str(guid.int)
-print 'b64: ' + base64.b64encode(guid.bytes_le)
+print('hex: ' + str(guid))
+print('int: ' + str(guid.int))
+print('b64: ' + str(base64.b64encode(guid.bytes_le).decode('utf-8')))
